@@ -1,3 +1,8 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "vscode-pets.disableEffects": true,
+  "vscode-pets.theme": "winter",
+  "vscode-pets.throwBallWithMouse": true,
+  "vscode-pets.position": "explorer",
+  "vscode-pets.petSize": "small"
 }
