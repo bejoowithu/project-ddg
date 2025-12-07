@@ -50,41 +50,47 @@ header {
 
 /*Ini nav */
 nav {
-  background-color: rgb(50, 50, 44);
-  padding: 12px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(15, 14, 14, 0.829);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  justify-content: center;
+  border-bottom-right-radius: 30px ;
+  border-bottom-left-radius: 30px ;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0 1rem;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
 }
 
-nav li {
-  list-style-type: none;
+nav div img {
+  width: 50px;
 }
 
-nav a {
-  font-size: 16px;
-  font-weight: 400;
-  color: white;
-  transition: 0.3s;
-  display: block;
-  padding: 8px 12px;
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
 }
 
-nav a:hover {
-  font-weight: bold;
-  color: #f5f5dc;
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu-icon {
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
 }
 
 /* layout */
@@ -136,29 +142,22 @@ nav a:hover {
 
 .skills{
   display: flex;
-  gap: 16px;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 
 .skill-badge{
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   padding: 8px 12px;
   border-radius: 999px;
-  border: 1px solid #eee;
   background: #fff;
-  color: white;
-  border: none;
   border-radius: 10px;
-  font-size: 1rem;
-  cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(114, 74, 74, 0.3);
-  max-width: 200px;
-  margin: 0 auto;
+  max-width: 150px;
+  margin: 30px ;
 }
 
 .skill-badge img{ 
@@ -256,7 +255,7 @@ textarea {
 
 .footer-title{
   font-family: 'Bubblegum Sans', cursive;
-  font-size: 24px;
+  font-size: 30px;
   margin: 0 0 28px 0;
   color: white;
 }
@@ -265,10 +264,10 @@ textarea {
   max-width: 920px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
   justify-items: center;
   align-items: center;
+  display: flex;
 }
 
 .footer-item{
@@ -281,19 +280,18 @@ textarea {
 }
 
 .footer-item i{
-  font-size: 32px;
+  font-size: 25px;
   width: 48px;
   height: 48px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   background: transparent;
   border-radius: 8px;
   flex-shrink: 0;
 }
 
 .footer-item span{
-  font-size: 16px;
+  font-size: 25px;
   color: white;
   word-break: break-word;
 }
@@ -305,16 +303,16 @@ textarea {
 
 .footer-copy{
   margin-top: 34px;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 
 .footer-item i {
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .footer-item span {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* Tablet Devices (768px - 1024px) */
@@ -326,6 +324,7 @@ textarea {
   nav ul {
     padding: 0 2rem;
     gap: 1.5rem;
+    display: none;
   }
 
   nav a {
@@ -355,44 +354,3 @@ textarea {
     justify-content: flex-start;
   }
 }
-/* Tablet Devices (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .jumbotron {
-    padding: 30px 60px;
-  } 
-
-  nav ul {
-    padding: 0 2rem;
-    gap: 1.5rem;
-  }
-
-  nav a {
-    font-size: 17px;
-  }
-
-  .about {
-    padding: 20px 30px;
-  }
-
-  .profile-pic {
-    width: 200px;
-    height: 200px;
-  }
-
-  .card {
-    margin: 20px 30px;
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px 40px;
-    justify-items: start;
-  }
-
-  .footer-item {
-    justify-content: flex-start;
-  }
-}
-
-
-
