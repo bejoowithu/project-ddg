@@ -73,7 +73,7 @@ nav div img {
 nav ul li a {
   text-decoration: none;
   font-family: "Segoe UI", sans-serif;
-  color: #191919;
+  color: #ffffff;
   font-weight: 600;
   padding: 8px 0;
   transition: all;
@@ -81,7 +81,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .menu-icon {
@@ -140,36 +140,34 @@ main {
 
 /* ini image */
 
-.skills{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
+.skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
 
-.skill-badge{
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: #fff;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(114, 74, 74, 0.3);
-  max-width: 150px;
-  margin: 30px ;
-}
+      .skill-badge {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        padding: 10px 16px;
+        background: #fff;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(114, 74, 74, 0.3);
+      }
 
-.skill-badge img{ 
-  width: 36px; 
-  height: 36px;
-}
+      .skill-badge img {
+        width: 36px;
+        height: 36px;
+      }
 
-.skill-badge:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(69, 74, 83, 0.5);
-  transform: translateY(2px);
-}
+      .skill-badge:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(69, 74, 83, 0.5);
+      }
 
 /* ini button submit */
 
@@ -246,7 +244,6 @@ textarea {
 
 .footer-new{
   background-color: #000;
-  color: var(--muted);
   padding: 60px 20px;
   margin-top: 40px;
   text-align: center;
